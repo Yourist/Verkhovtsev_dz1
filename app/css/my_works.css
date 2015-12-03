@@ -1,0 +1,150 @@
+/* Variable_content */
+/* Common_styles*/
+.aboutbox{
+    background: #eff3f7;
+    border-radius: 4px;
+    margin-bottom: 26px;
+}
+.aboutbox_header{
+    font-family: 'fira_sansbook';
+    font-size: 27px;
+    font-weight: normal;
+    color: #3ba8c0;
+    border-bottom: 2px #3ba8c0 solid;
+    margin: 0 0 23px 0;
+    padding: 13px 23px;
+    display: inline-block;
+}
+.aboutbox_body{
+    padding-bottom: 40px;
+    height: 100%;
+    min-height: 840px;
+}
+
+/* Projects */
+.project_block{
+    display: inline-block;
+    margin-left: 21px;
+    margin-right: 1px;
+    width: 185px;
+    height: 198px;
+    overflow: hidden;
+    
+}
+.project_img{
+    width: 180px;
+    height: 128px;
+}
+.project_link{
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-decoration: none;
+}
+.project_link:hover{
+    background-color: rgba(65, 145, 187, 0.7);
+    text-indent: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: #eff3f7;
+    
+    
+}
+.hidden_link{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-decoration: none;
+    vertical-align: middle;
+    color:#eff3f7;
+    border-radius: 4px;
+    text-indent: 100%;
+    margin: 50px;
+   
+}
+.hidden_link:hover{
+    color:#eff3f7;
+    border: 3px solid #eff3f7;
+    border-radius: 4px;
+    text-indent: 0;
+
+    vertical-align: middle;
+  
+}
+.site_link{
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    color: #3ba8c0;
+    padding: 0;
+}
+.project_site_link{
+    text-align: center;
+
+}
+.project_previev{
+    text-align: center;
+    color: #4a545d;
+    font: 300 15px FiraSans;
+}
+.project_1{
+    background: url(my_works/msn.png);
+    background-size: contain;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 3px solid #3ba8c0;
+}
+
+.project_2{
+    background: url(my_works/rg.png);
+    background-size: contain;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 3px solid #3ba8c0;
+}
+.project_3{
+    background: url(my_works/times.png);
+    background-size: contain;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 3px solid #3ba8c0;
+}
+.project_4{
+    background: url(my_works/yandex.png);
+    background-size: contain;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 3px solid #3ba8c0;
+}
+.project_5{
+    background: url(my_works/google.png);
+    background-size: contain;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 3px solid #3ba8c0;
+}
+.project_6{
+    background: url(my_works/gazeta.png);
+    background-size: contain;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 3px solid #3ba8c0;
+}
+.project_new{
+    background: url(img/add-new.png);
+    background-size: contain;
+}
+.project_new_link:hover{
+    background-color: rgba(81, 218, 248, 0.7);
+    text-indent: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: #eff3f7;
+}
+/* End Common_styles*/
+/* End Variable_content */
