@@ -1,0 +1,17 @@
+.main_contact{
+    float: right;
+    width: 650px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.header_contact{
+    color: #ffffff;
+    font: 300 25px 'fira_sansbook';
+    text-align: center;
+    background-color: #48cbe8;
+    display: block;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 49px 66px 62px 59px;
+    
+}
