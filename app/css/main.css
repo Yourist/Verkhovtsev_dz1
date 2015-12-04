@@ -20,7 +20,7 @@ html{
 body{
     height: 100%;
     background: url(../css/img/bg.png) repeat;
-    font: normal 1em "fira_sanslight";
+    font: normal 1em 'fira_sansbook';;
     color: #4a545d;
 }
 
@@ -182,6 +182,7 @@ body{
     .this_page .sidebar_navigation_list_item_link{
         color: #f9fafb !important;
         font-size: 22px;
+        font-family: 'fira_sansbook';
     }
     .sidebar_navigation_list_item_link{
         font-family: 'fira_sansbook';

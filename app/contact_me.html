@@ -115,17 +115,34 @@
 
                     <!-- Contact -->
                     <main class="main_contact clearfix">
-                        <h2 class="header_contact">У Bас есть интересный проект? Напишите мне</h2>
+                        <div class="header_contact_wrap">
+                            <h2 class="header_contact">У вас интересный проект? Напишите мне</h2>
+                        </div>
                         <div class="form_block">
-                            <section class="contact_form">
-                                <input type="text" class="name">
-                                <input type="text" class="location">
-                                <input type="text" class="message">
-                                <input type="text" class="capture">
-                                <input type="text" class="write_code">
-                                <button class="submit"></button>
-                                <button class="reset"></button>
-                            </section>
+                            <form class="contact_form">
+                              
+                               <div class="name_email">
+                                    <div class="name clearfix">Имя <br>
+                                        <input type="text" placeholder="  Как к Вам обращаться" class="name_input">
+                                    </div>
+                                    <div class="email clearfix">Email <br>
+                                        <input type="email" placeholder="  Куда мне писать" class="email_input">
+                                    </div>
+                                </div>
+                             
+                                <div class="message clearfix"> Сообщение <br>
+                                    <textarea type="text" placeholder="  Кратко, в чем суть" class="message_input"></textarea>
+                                </div>
+                                
+                                    <div class="capture clearfix">Введите код, указанный на картинке<br>
+                                        <div class="capture_input"></div>
+                                        <input type="text" placeholder="  Введите код" class="write_code_input">
+                                    </div>
+                                <div class="sibmit_reset clearfix">
+                                    <button class="submit clearfix">Отправить</button>
+                                    <button type="reset" class="reset clearfix">Очистить</button>
+                                </div>
+                            </form>
                         </div>
                     </main>
                     

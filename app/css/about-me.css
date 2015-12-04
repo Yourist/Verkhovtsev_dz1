@@ -3,7 +3,7 @@
 .aboutbox{
     background: #eff3f7;
     border-radius: 4px;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
 }
 .aboutbox_header{
     font-family: 'fira_sansbook';
@@ -11,7 +11,7 @@
     font-weight: normal;
     color: #3ba8c0;
     border-bottom: 2px #3ba8c0 solid;
-    margin: 0 0 23px 0;
+    margin: 0 0 20px 0;
     padding: 13px 23px;
     display: inline-block;
 }
@@ -36,15 +36,15 @@
         margin: 0;
     }
     .worksheet_list_item{
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
 
     .worksheet_list_item_what{
-        font-family: 'fira_sansbook';
+        font-family: 'fira_sansmedium';
         float: left;
         margin-right: 25px;
         color: #4a545d;
-        font: 500 17px;
+       /* font: 500 17px;*/
     }
     .avatar_box{
         width: 142px;
@@ -77,8 +77,10 @@
         .skills_list_item{
             display: inline-block;
             background: #3ba8c0;
-            padding: 1px 12px;
-            margin-bottom: 6px;
+            padding: 2px 12px;
+            margin-top: 6px;
+            margin-bottom: 2px;
+            margin-left: 5px;
             border-radius: 2px;
             background: -webkit-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
             background: -moz-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
@@ -92,8 +94,13 @@
         /* End Skills*/
             /* About_me exp */
 
+.table_exp{
+    margin-left: 58px;
+}
 .exp_wrap{
-    margin-bottom: 22px; 
+    /*margin: 22px;*/ 
+    display: inline-block;
+    padding-bottom: 18px;
 }
 .exp_ico{
     background: url(img/sprite.png);
@@ -101,29 +108,37 @@
     height: 38px;
     width: 37px;
     display: inline-block;
-    margin-left: 58px;
-    display: inline-block;
-    float:left;
-   /* margin-top: 5px;*/
+    /*padding-left: 30px;*/
+   
+    /*float:left;*/
+    margin-top: 2px;
 }
 .exp_text{
-   /* display: inline-block;*/
-/*    margin-left: 31px;*/
+    display: inline-block;
+    /*padding-left: 50px;*/
+    margin-left: 30px;
     float:right;
-    width: 527px;
+    width: 500px;
     color: #4a545d;
     font: 400 17px;
+}
+.exp_where{
+    display: block;
+    text-align: left;
 }
 .exp_howlong{
     color: #4a545d;
     font: 300 15px FiraSans;
+    display: block;
+    text-align: left;
+    /*margin-bottom: 30px;*/
 }
 .exp_wrap .edu{
     background: url(img/sprite.png);
     width: 50px;
     height: 30px;
     background-position: -364px -165px;
-    margin-top: 5px;
+    /*margin-top: 5px;*/
 }
 .exp_wrap .course{
     background: url(img/sprite.png);
