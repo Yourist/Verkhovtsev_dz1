@@ -113,6 +113,12 @@
 .submit_reset{
     height: 31px;
     width: 100%;
+
+}
+button, textarea{
+    outline:none;
+    border: 0;
+    
 }
 .submit{
     font-family: 'fira_sansbook';
@@ -124,6 +130,7 @@
     width: 137px;
     font-size: 19px;
     color: #ffffff;
+    box-shadow: none;
 }
 .reset{
     font-family: 'fira_sansbook';
