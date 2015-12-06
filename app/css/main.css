@@ -8,9 +8,6 @@ Sidebar
 Footer
     Footer down
     Login
-
-
-
 */
 
 
@@ -66,6 +63,18 @@ body{
     position: relative;
     margin-bottom: 39px;
 }
+.gradient_header{
+height: 3px;
+background: #e7eff3;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U3ZWZmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzI4NmU4MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlN2VmZjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left, #e7eff3 0%, #286e82 50%, #e7eff3 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e7eff3), color-stop(50%,#286e82), color-stop(100%,#e7eff3));
+background: -webkit-linear-gradient(left, #e7eff3 0%,#286e82 50%,#e7eff3 100%);
+background: -o-linear-gradient(left, #e7eff3 0%,#286e82 50%,#e7eff3 100%);
+background: -ms-linear-gradient(left, #e7eff3 0%,#286e82 50%,#e7eff3 100%);
+background: linear-gradient(to right, #e7eff3 0%,#286e82 50%,#e7eff3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', endColorstr='#e7eff3',GradientType=1 );
+}
 .header_logo_link{
     position:absolute;
     top: 39px;
@@ -93,7 +102,6 @@ body{
         height: 47px;
         width: 47px;
         margin-left: 20px; /* У таких элементов отступ всегда слева*/
-
     }
     .social_btn:first-child{
         margin-left: 0; /* Обнуляем отступ у первого элемента*/
@@ -108,41 +116,41 @@ body{
     .vk{
         width: 47px;
         height: 47px;
-        background-position: -392px -222px;
+        background-position: -392px -223px;
     }
     .vk:hover{
         width: 47px;
         height: 47px;
-        background-position: -448px -222px;
+        background-position: -448px -223px;
     }
     .tw{
         width: 47px;
         height: 47px;
-        background-position: -444px -165px;
+        background-position: -444px -166px;
     }
     .tw:hover{
         width: 47px;
         height: 47px;
-        background-position: -334px -222px;
+        background-position: -334px -223px;
     }
     .fb{
         width: 47px;
         height: 47px;
-        background-position: -275px -5px; }
+        background-position: -275px -6px; }
     .fb:hover{
         width: 47px;
         height: 47px;
-        background-position: -197px -62px;
+        background-position: -197px -63px;
     }
     .gh{
         width: 47px;
         height: 47px;
-        background-position: -254px -62px;
+        background-position: -254px -63px;
     }
     .gh:hover{
         width: 47px;
         height: 47px;
-        background-position: -311px -62px;
+        background-position: -311px -63px;
     }
         /* End Social buttons */
 /* End Header*/
@@ -167,7 +175,9 @@ body{
     .sidebar_navigation_list_item{
         border-top: 2px solid #3ba8c0;
         margin: 0 11px;
-        padding-top: 2px;
+        -webkit-box-sizing: border-box; /* Штука позволяет сохранить размеры блока */
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;        
     }
     .sidebar_navigation_list_item:first-child{
         border-top: none;
@@ -177,7 +187,7 @@ body{
         margin: 0;
         border-bottom: none;
         padding-left: 11px;
-        margin-bottom: -2px; /* Способ скрыть подчеркивание */
+        margin-bottom: -4px; /* Способ скрыть подчеркивание */
     }
     .this_page .sidebar_navigation_list_item_link{
         color: #f9fafb !important;
@@ -205,14 +215,13 @@ body{
             border-radius: 4px;
         }
         .sidebar_contacts_list{
-            /*list-style: none;*/
             margin: 0;
             padding: 0;
             border-radius: 4px;
+            height: 160px;
             -webkit-box-sizing: border-box; /* Штука позволяет сохранить размеры блока */
             -moz-box-sizing: border-box;
             box-sizing: border-box;
-            height: 160px;
             overflow: hidden;
 
         }
@@ -221,15 +230,40 @@ body{
         -webkit-box-sizing: border-box; /* Штука позволяет сохранить размеры блока */
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+        list-style: none;
+        padding-left: 71px;
 }
-
+.gmail:before, .telephone:before, .skype:before{
+    background: url(img/sprite.png);
+    content: "";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+    margin-top: 4px;
+    position: absolute;
+    margin-left: -26px;
+}
+.gmail:before{
+    width: 21px;
+    height: 16px;
+    background-position: -334px -119px;
+}
+.telephone:before{
+    width: 19px;
+    height: 20px;
+    background-position: -415px -165px; 
+    margin-top: 3px;
+}
+.skype:before{
+    width: 20px;
+    height: 20px;
+    background-position: -334px -165px;    
+}
         .gmail_link:hover, .telephone_link:hover, .skype_link:hover{
-            border-bottom: 1px solid #ffffff;
+           text-decoration: underline;
         }
         .contacts{
-            background-color: #3ba8c0;
-            /*padding: 20px 0 20px 0;*/
-            
+            background-color: #3ba8c0;  
         }
         .gmail{
             background-color: #41b9d4;
@@ -238,13 +272,12 @@ body{
         }
         .telephone{
             background-color: #48cbe8;
-            padding-top: 5px;
             padding-bottom: 6px;
-
+            padding-top: 7px;
         }
         .skype{
             background-color:#51daf8;
-            
+            padding-top: 8px;
             padding-bottom: 8px;
         }
         .contacts{
@@ -253,6 +286,8 @@ body{
             padding-left: 10px;
             padding-top: 6px;
             overflow: hidden;
+            padding-bottom: 2px;
+            
         }
         .sidebar_contacts_list_link {
             text-decoration: none;
@@ -262,29 +297,9 @@ body{
 .skype_link{
         padding-bottom: 4px
 }
-.gmail_ico{
-    background: url(img/sprite.png);
-    width: 21px;
-    height: 16px;
-    background-position: -334px -119px;
-}
-.tel_ico{
-    background: url(img/sprite.png);
-    width: 19px;
-    height: 20px;
-    background-position: -415px -165px;
-}
-.skype_ico{
-    background: url(img/sprite.png);
-    width: 20px;
-    height: 20px;
-    background-position: -334px -165px;
-    margin-top: 6px;
-}
+
 .sidebar_contacts_list_link, .tel_ico, .skype_ico, .gmail_ico{
     display: inline-block;
-    padding-left: 
-    
 }
         /* End Sidebar_contacts */
 /* End Sidebar */
@@ -345,7 +360,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaef', end
     /* Login */
     .main_footer .lock{
         position: absolute;
-        top: 26px;
+        top: 25px;
         left: 20px;
         height: 32px;
         width: 20px;
@@ -363,35 +378,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaef', end
         background: url(img/locked.png);
         height: 32px;
         width: 20px;
-        /*text-decoration: none;*/
-
     }
     .lock .lock_inner:hover{
         background: url(img/unlocked.png);
     }
     /* END Login */
 /* END Footer*/
-
-
-
-
-/*
-
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-    width: 20px;
-    height: 32px;
-    background-position: -332px -5px;
-*/
-
-
-
-
-
-
-
-
-
-
-

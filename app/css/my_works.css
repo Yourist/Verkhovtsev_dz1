@@ -10,8 +10,8 @@
     font-size: 27px;
     font-weight: normal;
     color: #3ba8c0;
-    border-bottom: 2px #3ba8c0 solid;
-    margin: 0 0 23px 0;
+    border-bottom: 3px #3ba8c0 solid;
+    margin: 0 0 26px 0;
     padding: 13px 23px;
     display: inline-block;
 }
@@ -22,58 +22,81 @@
 }
 
 /* Projects */
-.project_block{
+.project_block_wrap{
     display: inline-block;
-    margin-left: 21px;
-    margin-right: 1px;
+    margin-left: 19px;
+    margin-right: 4px;
     width: 185px;
-    height: 198px;
-    overflow: hidden;
-    
+    height: 236px;
+    overflow: hidden; 
+}
+.img_construction{
+    width: 179px;
+	border:3px solid #3ba8c0;
+	border-radius: 8px;
+	overflow: hidden;	
+	position: relative;
+	margin-bottom: 3px;
+    height: 126px;
+}
+.link_wrap{
+    background: rgba(1, 108, 164, 0.6);
+	position: absolute;
+	left: 0;
+	top:0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: .9s;
+	-moz-transition: .9s;
+	-ms-transition: .9s;
+	-o-transition: .9s;
+	transition: .9s;
+}
+.link_wrap:hover{
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.project_site_link{
+    text-align: center;
+
 }
 .project_img{
-    width: 180px;
-    height: 128px;
+    width: 190px;
+    height: 125px;
 }
-.project_link{
+.img_link{
+    display: inline-block;
+	width: 100%;
     height: 100%;
-    width: 100%;
-    display: block;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
     text-decoration: none;
-}
-.project_link:hover{
-    background-color: rgba(65, 145, 187, 0.7);
-    text-indent: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-align: center;
-    text-decoration: #eff3f7;
-    
-    
+
 }
 .hidden_link{
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-decoration: none;
-    vertical-align: middle;
-    color:#eff3f7;
+    margin: auto;
+    text-align: center;
+    display: block;
+	color: #fff;
+	font-size: 0.8em;
+	border:3px solid #fff;
     border-radius: 4px;
-    text-indent: 100%;
-    margin: 50px;
-   
-}
-.hidden_link:hover{
-    color:#eff3f7;
-    border: 3px solid #eff3f7;
-    border-radius: 4px;
-    text-indent: 0;
+    padding: 0 5px;
+    margin-top:55px;
+    line-height: 18px;
+    margin-left: 40px;
+    margin-right: 40px;
 
-    vertical-align: middle;
-  
+
+}
+.link_wrap:hover .img_link{
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
 }
 .site_link{
     text-decoration: none;
@@ -81,70 +104,18 @@
     width: 100%;
     color: #3ba8c0;
     padding: 0;
-}
-.project_site_link{
-    text-align: center;
-
+    font-size: 13px;
+    font-family: 'fira_sansbook_italic';
+    color: #3ba8c0;
 }
 .project_previev{
     text-align: center;
     color: #4a545d;
-    font: 300 15px FiraSans;
+    font-family: 'fira_sansbook';
+    font-size: 15px;
+    padding-top: 6px;
 }
-.project_1{
-    background: url(my_works/msn.png);
-    background-size: contain;
-    border-radius: 4px;
-    overflow: hidden;
-    border: 3px solid #3ba8c0;
+.new_block{
+    border: 2px dashed #3ba8c0;
+    border-radius: 6px;
 }
-
-.project_2{
-    background: url(my_works/rg.png);
-    background-size: contain;
-    border-radius: 4px;
-    overflow: hidden;
-    border: 3px solid #3ba8c0;
-}
-.project_3{
-    background: url(my_works/times.png);
-    background-size: contain;
-    border-radius: 4px;
-    overflow: hidden;
-    border: 3px solid #3ba8c0;
-}
-.project_4{
-    background: url(my_works/yandex.png);
-    background-size: contain;
-    border-radius: 4px;
-    overflow: hidden;
-    border: 3px solid #3ba8c0;
-}
-.project_5{
-    background: url(my_works/google.png);
-    background-size: contain;
-    border-radius: 4px;
-    overflow: hidden;
-    border: 3px solid #3ba8c0;
-}
-.project_6{
-    background: url(my_works/gazeta.png);
-    background-size: contain;
-    border-radius: 4px;
-    overflow: hidden;
-    border: 3px solid #3ba8c0;
-}
-.project_new{
-    background: url(img/add-new.png);
-    background-size: contain;
-}
-.project_new_link:hover{
-    background-color: rgba(81, 218, 248, 0.7);
-    text-indent: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-align: center;
-    text-decoration: #eff3f7;
-}
-/* End Common_styles*/
-/* End Variable_content */

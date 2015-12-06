@@ -35,8 +35,7 @@
                <!--Modernizr-->
         <script src="bower/modernizer/modernizr.js"></script>
                <!-- fonts -->
-        <link rel="stylesheet" href="fonts/fira/fira.css">
-        <link rel="stylesheet" href="fonts/Proxima-Nova/proxima.css">
+        <link rel="stylesheet" href="fonts/fira_proxima.css">
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
 	<![endif]-->
@@ -73,6 +72,7 @@
 	                        </li>
 	                </ul>
 	            </div>
+	            <div class="gradient_header"></div>
 	        </header>
         <!-- End Header-->
     <!-- Container -->
@@ -94,17 +94,16 @@
                     
                     <adress class="sidebar_contacts">
                         <ul class="sidebar_contacts_list">
+                           
                             <li class="sidebar_contacts_list_item contacts">
                                 <span class="contacts">Контакты</span></li>
                             <li class="sidebar_contacts_list_item gmail">
-                                <div class="gmail_ico"></div>
-                                <a href="mailto: leoromanovich@gmail.com" class="sidebar_contacts_list_link gmail_link"><!--leoromanovich-->pochta@mail.ru </a></li>
+                                <a href="mailto: leoromanovich@gmail.com" class="sidebar_contacts_list_link gmail_link">leoromanovich</a></li>
                             <li class="sidebar_contacts_list_item telephone">
-                                <div class="tel_ico"></div>
                                 <a href="tel: +79990876180" class="sidebar_contacts_list_link telephone_link">+79990876180</a></li>
                             <li class="sidebar_contacts_list_item skype">
-                                <div class="skype_ico"></div>
                                 <a href="skype: lekkaren?call" class="sidebar_contacts_list_link skype_link">lekkaren</a></li>
+                                
                         </ul>
                     </adress>
                     
@@ -116,7 +115,7 @@
                         <h2 class="aboutbox_header">Основная информация</h2>
                         <div class="aboutbox_body clearfix">
                             <div class="image_wrap">
-                                <div class="avatar_box"><img src="/css/img/Watashi.jpg" alt="My Photo" class="avatar"></div>
+                                <div class="avatar_box"><img src="/css/img/Me.jpg" alt="My Photo" class="avatar"></div>
                             </div>
                             <div class="worksheet_wrap">
                                 <ul class="worksheet_list">
@@ -157,22 +156,14 @@
                     <section class="aboutbox">
                         <h2 class="aboutbox_header">Опыт работы</h2>
                         <div class="aboutbox_body clearfix">
-                        <table class="table_exp">
-                            <tr class="exp_wrap">
-                                <th class="exp_ico"></th>
-                                <th class="exp_text">
-                                    <span class="exp_where">"ИП Боровицкий" - Продавец дисков <!--"Фотокорреспондент" Министерства образования Хабаровского края--></span>
-                                    <span class="exp_howlong">Сентябрь 2005 - Август 2008<!--Август 2013 - Март 2014--></span>
-                                </th>
-                            </tr>
-                            <tr class="exp_wrap">
-                                <th class="exp_ico"></th>
-                                <th class="exp_text">
-                                    <span class="exp_where">"ООО Системы безопасности" - Системный администратор <!--"Фотокорреспондент" Министерства образования Хабаровского края--></span>
-                                    <span class="exp_howlong">Июнь 2008 - Июль 2010<!--Август 2013 - Март 2014--></span>
-                                </th>
-                            </tr>
-                        </table>
+                           
+                            <ul class="exp_wrap">
+                                <li class="exp_text work">
+                                    <div class="where">"Фотокорреспондент" Мин.Образования Хабаровского кр.</div>
+                                    <div class="howlong">Август 2013 - Март 2014</div>
+                                    </li>
+
+                            </ul>
                         </div>
 
                     </section>
@@ -181,20 +172,18 @@
                     <section class="aboutbox">
                         <h2 class="aboutbox_header">Образование</h2>
                         <div class="aboutbox_body clearfix">
-                            <div class="exp_wrap clearfix">
-                               <div class="exp_ico edu"></div>
-                               <div class="exp_text">
-                                   <div class="exp_where">Незаконченное высшее. ХГУЭП</div>
-                                   <div class="exp_howlong">Сентябрь 2011 - по настоящее время</div>
-                               </div>
-                            </div>
-                            <div class="exp_wrap clearfix">
-                               <div class="exp_ico course"></div>
-                               <div class="exp_text">
-                                   <div class="exp_where">Курсы Loftschool.ru</div>
-                                   <div class="exp_howlong">Ноябрь 2015 - по настоящее время</div>
-                               </div>
-                            </div>
+                            <ul class="exp_wrap">
+                                <li class="exp_text edu">
+                                  
+                                    <div class="where">Незаконченное высшее. ХГУЭП, Юр.фак</div>
+                                    <div class="howlong">Сентябрь 2012 - по настоящее время</div>
+                                   
+                                    </li>
+                                <li class="exp_text course">
+                                    <div class="where">Курсы loftschool.ru</div>
+                                    <div class="howlong">Ноябрь 2014 - по настоящее время</div>
+                                </li>
+                            </ul>
                         </div>
                     </section>
                     <!-- End About_box third -->
@@ -205,6 +194,7 @@
   
   <!-- FOOTER -->
     <footer class="main_footer">
+        <div class="gradient_header"></div>
         <div class="container">
             <div class="lock">
             <a href="/login.html" class="lock_inner"></a>
