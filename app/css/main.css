@@ -316,13 +316,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
 .wrapper{
     position: relative;
     min-height: 100%;
+    width: 100%;
     min-width: 970px;
     height: auto;
 }
 .wrapper:after{
     content: "";
     height: 80px;
-    display: block
+    display: block;
+    width: 100%;
+    min-width: 970px;
 }
 .main_footer{
     height: 80px;
@@ -332,6 +335,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
     background-color: #eff3f7;
     font-family: 'fira_sanslight';
     color: #4a545d;
+        width: 100%;
+    min-width: 970px;
 }
 .main_footer:before{
     display: block;
