@@ -16,7 +16,7 @@ html{
 }
 body{
     height: 100%;
-    background: url(../img/bg.png) repeat;
+    background: url(../css/img/bg.png) repeat;
     font: normal 1em 'fira_sansbook';;
     color: #4a545d;
 }
@@ -380,7 +380,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaef', end
         width: 20px;
     }
     .lock .lock_inner:hover{
-        background: url(/img/unlocked.png);
+        background: url(img/unlocked.png);
     }
     /* END Login */
 /* END Footer*/
