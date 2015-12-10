@@ -54,7 +54,7 @@
 	            <div class="container_big">
 	                <!-- Logo_block -->
 	                <a href="#" class="header_logo_link">
-	                <img src="/css/img/logo.png" alt="Logo" class="header_logo_link_img">
+	                <img src="/img/logo.png" alt="Logo" class="header_logo_link_img">
 	                <span class="header_logo_link_text">Сайт-портфолио</span>
 	                </a>
 	                <!-- Social_buttons -->
@@ -93,10 +93,9 @@
                         </ul>
                     </nav>
                     
-                    <adress class="sidebar_contacts">
+                    <adress class="sidebar_contacts flearfix">
+                       <h2 class="contacts">Контакты</h2>
                         <ul class="sidebar_contacts_list">
-                            <li class="sidebar_contacts_list_item contacts">
-                                <span class="contacts">Контакты</span></li>
                             <li class="sidebar_contacts_list_item gmail">
                                 <div class="gmail_ico"></div>
                                 <a href="mailto: leoromanovich@gmail.com" class="sidebar_contacts_list_link gmail_link">leoromanovich </a></li>
@@ -117,21 +116,22 @@
                         </div>
                         <div class="form_block">
                             <form class="contact_form">
-                              
-                               <div class="name_email">
-                                    <div class="name clearfix">Имя <br>
+                              <div class="name_email clearfix">
+                               <div class="name clearfix">
+                                    <label class="name_label clearfix">Имя</label>
                                         <input type="text" placeholder="  Как к Вам обращаться" class="name_input">
-                                    </div>
-                                    <div class="email clearfix">Email <br>
+                                </div>
+                                   <div class="email clearfix">
+                                    <label class="email_label clearfix">Email</label>
                                         <input type="email" placeholder="  Куда мне писать" class="email_input">
-                                    </div>
                                 </div>
-                             
-                                <div class="message clearfix"> Сообщение <br>
+                             </div>
+                               <div class="message clearfix">
+                                <label class="message_label clearfix"> Сообщение</label>
                                     <textarea type="text" placeholder="  Кратко, в чем суть" class="message_input"></textarea>
-                                </div>
-                                
-                                    <div class="capture clearfix">Введите код, указанный на картинке<br>
+                               </div>
+                                <div class="capture clearfix">
+                                    <label class="capture_label clearfix">Введите код, указанный на картинке</label>
                                         <div class="capture_input"></div>
                                         <input type="text" placeholder="  Введите код" class="write_code_input">
                                     </div>

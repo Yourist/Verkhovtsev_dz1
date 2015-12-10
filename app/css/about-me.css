@@ -3,7 +3,7 @@
 .aboutbox{
     background: #eff3f7;
     border-radius: 4px;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
 }
 .aboutbox_header{
     font-family: 'fira_sansbook';
@@ -11,7 +11,7 @@
     font-weight: normal;
     color: #3ba8c0;
     border-bottom: 3px #3ba8c0 solid;
-    margin: 0 0 20px 0;
+    margin: 0 0 17px 0;
     padding: 13px 23px;
     padding-top: 12px;
     display: inline-block;
@@ -37,7 +37,7 @@
         margin: 0;
     }
     .worksheet_list_item{
-        margin-bottom: 10px;
+        margin-bottom: 9px;
     }
 
     .worksheet_list_item_what{
@@ -93,50 +93,74 @@
 
 
 .exp_wrap{
-    list-style: none;
     margin: 0;
+    padding: 0 0 0 60px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 650px;
+    
+}
+.bottomia{
+margin-bottom: -10px;
 }
 .exp_text{
-    margin-left: 86px;
-    margin-top: 1px;
-    padding-bottom: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin-bottom: 7px;
 }
+
 .exp_text:before{
-    background: url(img/sprite.png) center no-repeat;
+    background: url(/img/sprite.png) center no-repeat;
     content: "";
-	display: inline-block;
-    position: absolute;
-    margin-left: -67px;
-    margin-top: 2px;
+	display: inline-block;  
+    vertical-align: middle;
+    margin: 0 25px 5px 0;
 }
 .work:before{
     background-position: -334px -277px;
     height: 38px;
     width: 37px;
 }
+.where_howlong{
+    display: inline-block;
+    max-width: 480px;
+    vertical-align: middle;
+    margin-top: 3px;
+}
 .where{
-    display: block;
-    font: 500 17px 'fira_sansbook';
-    color: #4a545d;     
+    min-width: 400px;
+    max-width: 480px;
+    font: 16px 'fira_sansbook';
+    color: #4a545d; 
+    display: inline-block;
+    vertical-align: middle;
 }
 .howlong{
-    display: block;
+    min-width: 400px;
+    max-width: 480px;
     color: #4a545d;
     font: 15px 'fira_sansbook';
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -9px;
+}
+.edu{
+    margin-top: -2px;
 }
 .edu:before{
     width: 50px;
     height: 30px;
     background-position: -364px -165px;
-    margin-left: -68px;
-    margin-top: 7px;
+    margin-left: -3px;
+    margin-right: 14px;
 }
 .course:before{
     width: 30px;
     height: 36px;
     background-position: -197px -5px;
-    margin-left: -61px;
-    margin-top: 6px;
+    margin-left: 4px;
+    margin-top: 3px
 }
 
 

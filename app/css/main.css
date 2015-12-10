@@ -111,7 +111,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
         height: 100%;
         width: 100%;
         text-indent: -9999px;
-        background: url(img/sprite.png);
+        background: url(/img/sprite.png);
     }
     .vk{
         width: 47px;
@@ -197,7 +197,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
     .sidebar_navigation_list_item_link{
         font-family: 'fira_sansbook';
         display: block;
-        font-size: 20px;
+        font-size: 19px;
         text-decoration: none;
         color: #959aa8;
         margin-left: 16px;
@@ -213,12 +213,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
             overflow: hidden;
             background: #eff3f7;
             border-radius: 4px;
+            height: 160px;
+            display: block;
         }
         .sidebar_contacts_list{
             margin: 0;
             padding: 0;
-            border-radius: 4px;
-            height: 160px;
             -webkit-box-sizing: border-box; /* Штука позволяет сохранить размеры блока */
             -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -226,7 +226,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
 
         }
 .sidebar_contacts_list_item{
-        padding-left: 44px;
         -webkit-box-sizing: border-box; /* Штука позволяет сохранить размеры блока */
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -234,13 +233,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
         padding-left: 71px;
 }
 .gmail:before, .telephone:before, .skype:before{
-    background: url(img/sprite.png);
+    background: url(/img/sprite.png);
     content: "";
 	width: 20px;
 	height: 20px;
 	display: inline-block;
-    margin-top: 4px;
-    position: absolute;
     margin-left: -26px;
 }
 .gmail:before{
@@ -263,31 +260,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
            text-decoration: underline;
         }
         .contacts{
-            background-color: #3ba8c0;  
+            background-color: #3ba8c0;
+            margin: 0;
+            padding-left: 21px;
+            color: #fbfcfd;
+            font: 300 21px 'fira_sansbook';
+            padding-top: 7px;
+            overflow: hidden;
+            padding-bottom: 2px;
         }
         .gmail{
             background-color: #41b9d4;
-            padding-top: 7px;
-            padding-bottom: 8px;
+            padding-top: 8px;
+            padding-bottom: 5px;
         }
         .telephone{
             background-color: #48cbe8;
-            padding-bottom: 6px;
+            padding-bottom: 3px;
             padding-top: 7px;
         }
         .skype{
             background-color:#51daf8;
-            padding-top: 8px;
+            padding-top: 5px;
             padding-bottom: 8px;
-        }
-        .contacts{
-            color: #fbfcfd;
-            font: 300 21px 'fira_sansbook';
-            padding-left: 10px;
-            padding-top: 6px;
-            overflow: hidden;
-            padding-bottom: 2px;
-            
         }
         .sidebar_contacts_list_link {
             text-decoration: none;
@@ -335,7 +330,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
     background-color: #eff3f7;
     font-family: 'fira_sanslight';
     color: #4a545d;
-        width: 100%;
+    width: 100%;
     min-width: 970px;
 }
 .main_footer:before{
@@ -380,7 +375,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaef', end
         font-size: 16px;
         line-height: 2.2;
         color: #4a545d;
-        background: url(img/locked.png);
+        background: url(/img/locked.png);
         height: 32px;
         width: 20px;
     }
