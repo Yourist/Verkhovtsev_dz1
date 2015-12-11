@@ -14,22 +14,32 @@
 </head>
 <body>
      <div class="add_project_background">
-    <div class="add_project_popup">
-    <div class="add_header clearfix">
-        <h2 class="add_header_h2">Добавление проекта</h2>
-        <div class="add_close"></div>
-    </div>
-    <form action="" class="add_project">
-        <label for="" class="add_project_name"></label>
-        <input type="text" class="add_project_name_input">
-        <label for="" class="add_project_picture"></label>
-        <input type="text">
-        <label for="" class="add_project_url_input"></label>
-        <label for="" class="add_description"></label>
-        <textarea name="" id="" cols="30" rows="10" class="add_project_description"></textarea>
-        <input type="text" class="add_submit">
-    </form>
-</div>
+            <div class="add_project_popup">
+            <div class="add_header clearfix">
+                <h2 class="add_header_h2">Добавление проекта</h2>
+                <a class="add_close" href="#">x</a>
+            </div>
+            <form action="" id="add_project">
+               
+                <label for="" id="add_project_name">Название проекта</label>
+                <input type="text" placeholder="  Введите название" id="add_input_name">
+                
+                <label for="" id="add_project_picture">Картинка проекта</label>
+                <div id="add_file_box">
+                    <input id="filename" type="text" class="add_file_box_input" name="filename" placeholder="Загрузите изображение" disabled>
+                    <label class="add_file_box_button">
+                        <input id="fileupload" class="fileupload" type="file" name="files[]">
+                        <input id="fileurl" type="hidden" name="fileurl">
+                    </label>
+                </div>
+                
+                <label for="" id="add_project_url_input">URL проекта</label>
+                <input type="text" placeholder="  Добавить ссылку" id="add_input_url" >
+                <label for="" id="add_description">Описание</label>
+                <textarea name="description_add" id="add_project_description" placeholder="  Пара слов о Вашем проекте"></textarea>
+                <button type="submit" id="add_submit">Добавить</button>
+            </form>
+        </div>
 </div>
   
 </body>
