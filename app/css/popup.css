@@ -22,13 +22,8 @@
     position: absolute;
     width: 362px;
     display: inline-block;
-    margin: auto;
-    top: 0;
-    right: 0;
-    left: 0;
     background-color: #eff3f7;
     border-radius: 4px;
-    margin-top: 150px;
     overflow: hidden;
 }
 

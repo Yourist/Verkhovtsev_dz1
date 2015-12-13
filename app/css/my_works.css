@@ -145,14 +145,11 @@
     position: absolute;
     width: 362px;
     display: inline-block;
-    margin: auto;
-    top: 0;
-    right: 0;
-    left: 0;
     background-color: #eff3f7;
     border-radius: 4px;
-    margin-top: 150px;
     overflow: hidden;
+     margin-top: -150px;
+    margin-left: -150px;
 }
 .add_header{
     background: #48cbe8;
@@ -168,16 +165,15 @@
     letter-spacing: 1px;
     
 }
-.add_close{
+.b-close{
     float:right;
     margin: 9px 12px 0px 20px; 
     color: #ffffff;
-    height: 23px;
-    width: 23px;
-    border-radius: 50%;
-    border: 1px solid #ffffff;
-    text-align: center;
-    text-decoration: none;
+    height: 25px;
+    width: 25px;
+    outline:none;
+    border: 0;
+    background: url(/img/close_b.png);
 }
 #add_project{
     width: 318px;

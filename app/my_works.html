@@ -205,33 +205,37 @@
             <div class="add_project_popup">
             <div class="add_header clearfix">
                 <h2 class="add_header_h2">Добавление проекта</h2>
-                <a class="add_close" href="#">x</a>
+                <button class="b-close"></button>
             </div>
-            <form action="" id="add_project">
+            
+            <form method="POST" action="add_project.php" id="add_project">
                
-                <label for="" id="add_project_name">Название проекта</label>
-                <input type="text" placeholder="  Введите название" id="add_input_name">
-                
-                <label for="" id="add_project_picture">Картинка проекта</label>
-                <div id="add_file_box">
-                    <input id="filename" type="text" class="add_file_box_input" name="filename" placeholder="Загрузите изображение" disabled>
-                    <label class="add_file_box_button">
-                        <input id="fileupload" class="fileupload" type="file" name="files[]">
-                        <input id="fileurl" type="hidden" name="fileurl">
-                    </label>
-                </div>
-                
-                <label for="" id="add_project_url_input">URL проекта</label>
-                <input type="text" placeholder="  Добавить ссылку" id="add_input_url" >
-                <label for="" id="add_description">Описание</label>
-                <textarea name="description_add" id="add_project_description" placeholder="  Пара слов о Вашем проекте"></textarea>
+                <label for="add_input_name" id="add_project_name">Название проекта
+                    <input type="email" placeholder="  Введите название" id="add_input_name" />
+                </label>
+                <label for="add_file_box" id="add_project_picture">Картинка проекта
+                    <div id="add_file_box">
+                        <input id="filename" type="text" class="add_file_box_input" name="filename" placeholder="Загрузите изображение" disabled>
+                        <label class="add_file_box_button">
+                            <input id="fileupload" class="fileupload" type="file" name="files[]">
+                            <input id="fileurl" type="hidden" name="fileurl">
+                        </label>
+                    </div>
+                </label>
+                <label for="add_input_url" id="add_project_url_input">URL проекта
+                    <input type="text" placeholder="  Добавить ссылку" id="add_input_url" >
+                </label>
+                <label for="add_project_description" id="add_description">Описание
+                    <textarea name="description_add" id="add_project_description" placeholder="  Пара слов о Вашем проекте"></textarea>
+                </label>
                 <button type="submit" id="add_submit">Добавить</button>
             </form>
             </div>
         </div>
 <!-- end POPUP-->  
   <!--jQuery-->
-<script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/jquery/jquery.js"></script>
+<script src="bower/bPopup/jquery.bpopup.js"></script>
 <script src="js/my_work.js"></script>
 
 </body>
