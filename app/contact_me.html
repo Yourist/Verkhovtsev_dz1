@@ -29,6 +29,7 @@
        <meta name="theme-color" content="#ffffff">
                <!--bower CSS-->
         <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+        <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
                <!-- CSS -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/my_works.css">
@@ -119,25 +120,25 @@
                               <div class="name_email clearfix">
                                <div class="name clearfix">
                                     <label class="name_label clearfix">Имя</label>
-                                        <input type="text" placeholder="  Как к Вам обращаться" class="name_input">
+                                        <input type="text" placeholder="  Как к Вам обращаться" class="name_input" name="your_name">
                                 </div>
                                    <div class="email clearfix">
                                     <label class="email_label clearfix">Email</label>
-                                        <input type="email" placeholder="  Куда мне писать" class="email_input">
+                                        <input type="text" placeholder="  Куда мне писать" class="email_input" name="your_email">
                                 </div>
                              </div>
                                <div class="message clearfix">
                                 <label class="message_label clearfix"> Сообщение</label>
-                                    <textarea type="text" placeholder="  Кратко, в чем суть" class="message_input"></textarea>
+                                    <textarea type="text" placeholder="  Кратко, в чем суть" class="message_input" name="your_descript"></textarea>
                                </div>
                                 <div class="capture clearfix">
                                     <label class="capture_label clearfix">Введите код, указанный на картинке</label>
                                         <div class="capture_input"></div>
-                                        <input type="text" placeholder="  Введите код" class="write_code_input">
+                                        <input type="text" placeholder="  Введите код" class="write_code_input" name="you_not_robot">
                                     </div>
                                 <div class="sibmit_reset clearfix">
                                     <button type="submit" class="submit clearfix">Отправить</button>
-                                    <button type="reset" class="reset clearfix">Очистить</button>
+                                    <button type="reset" class="reset clearfix" id="reset_btn">Очистить</button>
                                 </div>
                             </form>
                         </div>
@@ -162,8 +163,11 @@
   
   
   <!--jQuery-->
-<script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/jquery/jquery.js"></script>
+<script src="bower/jqueryvalidation/jquery.validate.js"></script>
+<script src="js/validation.js"></script>
 <script src="js/main.js"></script>
+<script src="bower/qtip2/jquery.qtip.js"></script>
 
 </body>
 </html>

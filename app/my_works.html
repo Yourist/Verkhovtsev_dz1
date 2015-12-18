@@ -29,6 +29,7 @@
        <meta name="theme-color" content="#ffffff">
                <!--bower CSS-->
         <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+        <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
                <!-- CSS -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/my_works.css">
@@ -179,15 +180,14 @@
                                 </div>
                              </div>
                         </div>
-                            </div>
-                             
-
-                    </section>
+                     </section>
+                </div>
+     
                     <!-- End About_box first -->
                 </div>
             </div>
 	    </div>
-	</div>
+	
   
   <!-- FOOTER -->
     <footer class="main_footer">
@@ -208,26 +208,40 @@
                 <button class="b-close"></button>
             </div>
             
-            <form method="POST" action="add_project.php" id="add_project">
+            <form method="post" action="add_project.php" id="add_project">
+               <div class="server-mes error-mes">
+                  <h4 class="error-text">Ошибка!</h4>
+                  <span class="error-text-p">Невозможно добавить проект.</span>
+                  <div class="close_error_mes"></div>
+               </div>
                
+               <div class="server-mes succes-mes"></div>
+               <div class="form_group">
                 <label for="add_input_name" id="add_project_name">Название проекта
-                    <input type="email" placeholder="  Введите название" id="add_input_name" />
+                    <input type="text" placeholder="  Введите название" id="add_input_name" name="name_project" />
                 </label>
+                   </div>
+                    <div class="form_group">
                 <label for="add_file_box" id="add_project_picture">Картинка проекта
                     <div id="add_file_box">
                         <input id="filename" type="text" class="add_file_box_input" name="filename" placeholder="Загрузите изображение" disabled>
                         <label class="add_file_box_button">
-                            <input id="fileupload" class="fileupload" type="file" name="files[]">
+                            <input id="fileupload" class="fileupload" type="file" name="files_la">
                             <input id="fileurl" type="hidden" name="fileurl">
                         </label>
                     </div>
                 </label>
+                </div>
+                 <div class="form_group">
                 <label for="add_input_url" id="add_project_url_input">URL проекта
-                    <input type="text" placeholder="  Добавить ссылку" id="add_input_url" >
+                    <input type="text" placeholder="  Добавить ссылку" id="add_input_url" name="project_URL" >
                 </label>
+                </div>
+                <div class="form_group">
                 <label for="add_project_description" id="add_description">Описание
                     <textarea name="description_add" id="add_project_description" placeholder="  Пара слов о Вашем проекте"></textarea>
                 </label>
+                </div>
                 <button type="submit" id="add_submit">Добавить</button>
             </form>
             </div>
@@ -236,6 +250,9 @@
   <!--jQuery-->
 <script src="bower/jquery/jquery.js"></script>
 <script src="bower/bPopup/jquery.bpopup.js"></script>
+<script src="bower/qtip2/jquery.qtip.js"></script>
+<script src="bower/jqueryvalidation/jquery.validate.js"></script>
+<script src="js/validation.js"></script>
 <script src="js/my_work.js"></script>
 
 </body>

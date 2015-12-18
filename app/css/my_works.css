@@ -122,6 +122,41 @@
 .hide_popup_block{
     display: none;
 }
+.error-mes{
+    height: 59px;
+    background-color: rgba(249, 126, 118, 0.33);
+    border-radius: 4px;
+    border: 1px solid #f97e76;
+    padding: 1px 1px 3px 8px;
+    margin-top: 16px;
+    margin-bottom: 5px;
+    display: none;
+}
+.error-text{
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-family: 'fira_sanslight';
+    color: #f97e76;
+    margin-bottom: -7px;
+}
+.close_error_mes{
+    height: 11px;
+    width: 11px;
+    float: right;
+    background: url(/img/close_err_mess.png);
+    margin-top: -27px;
+    margin-right: 3px;
+}
+.error-text-p{
+    padding: 0;
+    margin: 0;
+    font-family: 'fira_sansbook';
+    color: #f97e76;
+    font-size: 15px
+}
+
+
 ::-webkit-input-placeholder {color:#48cbe8;font-size: 13px;}
 ::-moz-placeholder          {color:#48cbe8;font-size: 13px;}/* Firefox 19+ */
 :-moz-placeholder           {color:#48cbe8;font-size: 13px;}/* Firefox 18- */
@@ -147,14 +182,14 @@
     display: inline-block;
     background-color: #eff3f7;
     border-radius: 4px;
-    overflow: hidden;
-     margin-top: -150px;
+    margin-top: -200px;
     margin-left: -150px;
 }
 .add_header{
     background: #48cbe8;
     border-bottom: 9px solid #67dffa;
     margin-bottom: 9px;
+    border-radius: 4px;
 }
 .add_header_h2{
     float:left;
