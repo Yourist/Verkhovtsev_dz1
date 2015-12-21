@@ -116,41 +116,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
     .vk{
         width: 47px;
         height: 47px;
-        background-position: -392px -223px;
+        background-position: -391px -222px;
     }
     .vk:hover{
         width: 47px;
         height: 47px;
-        background-position: -448px -223px;
+        background-position: -448px -222px;
     }
     .tw{
         width: 47px;
         height: 47px;
-        background-position: -444px -166px;
+        background-position: -444px -165px;
     }
     .tw:hover{
         width: 47px;
         height: 47px;
-        background-position: -334px -223px;
+        background-position: -334px -222px;
     }
     .fb{
         width: 47px;
         height: 47px;
-        background-position: -275px -6px; }
+        background-position: -275px -5px; }
     .fb:hover{
         width: 47px;
         height: 47px;
-        background-position: -197px -63px;
+        background-position: -197px -62px;
     }
     .gh{
         width: 47px;
         height: 47px;
-        background-position: -254px -63px;
+        background-position: -254px -62px;
     }
     .gh:hover{
         width: 47px;
         height: 47px;
-        background-position: -311px -63px;
+        background-position: -311px -62px;
     }
         /* End Social buttons */
 /* End Header*/
@@ -304,6 +304,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
     width: 650px;
     float: right;
 }
+input{
+    font-family: "fira_sansbook";
+}
 /* end Variable_content*/
 
 /* Footer */
@@ -380,7 +383,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaef', end
         width: 20px;
     }
     .lock .lock_inner:hover{
-        background: url(img/unlocked.png);
+        background: url(/img/unlocked.png);
     }
     /* END Login */
 /* END Footer*/
@@ -393,7 +396,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaef', end
     border-radius: 4px;
     border: 1px solid #f97e76;
 }
-
+#filename-error,
+#login-error,
+#password-error,
 #add_project_description-error,
 #add_input_name-error,
 #add_input_url-error,
@@ -435,7 +440,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaef', end
     margin-left: 218px;
     margin-top: 22px;
 }
-
+#login-error{
+    margin-left: -117px;
+    margin-top: -45px;
+}
+#password-error{
+    margin-left: -124px;
+    margin-top: -45px;   
+}
+#filename-error{
+    margin-left: -109px;
+    margin-top: -33px;
+}
+#filename-error:before,
+#login-error:before,
+#password-error:before,
 #you_not_robot-error:before,
 #your_descript-error:before,
 #your_email-error:before,
@@ -467,7 +486,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaef', end
     margin-left: 112px;
     margin-top: 6px;
 }
-
+#filename-error:before{
+    margin-left: 87px;
+    margin-top: 6px;   
+}  
 #your_name-error:before{
     margin-left: 107px;
     margin-top: 6px;
@@ -484,7 +506,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaef', end
     margin-left: -15px;
     margin-top: 7px;
 }
-
+#login-error:before{
+    margin-left: 94px;
+    margin-top: 6px;
+}
+#password-error:before{
+    margin-left: 102px;
+    margin-top: 6px;
+}
 
 
 

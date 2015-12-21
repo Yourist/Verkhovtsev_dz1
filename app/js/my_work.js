@@ -33,11 +33,13 @@ var _showModal = function(ev) {
 var _addProject = function(ev){
         console.log('Добавление проекта');
         ev.preventDefault();
+    
+/*    if(valid = false){return false};*/
         
         //Объявляем переменные
         var form = $(this),// делаем из простого this jQuery объект
-            url = 'add_project.php',
-            myServerGiveMeAnAnswer = _ajaxForm(form, url);
+            url = 'add_project.php';
+           
         
         myServerGiveMeAnAnswer.done(function(ans) {
             var succesBox = form.find('.success-mes'),
@@ -54,30 +56,6 @@ var _addProject = function(ev){
         }) 
     };
     
-// Универсальная функция 
-    // Для её работы используется 
-    // @form - форма файла
-    // @url - адрес php документа, к которому обращаемся
-        //1. Собирает данные из формы
-        //2. Проверяет форму
-        //3. Делает запрос на сервер и возвращает ответ с сервера
-var _ajaxForm = function(form, url) {
-
-        
-        // if(!valid) return false;
-        data = form.serialize();
-        
-        var result =  $.ajax({
-            url: url,
-            type: "POST",
-            datatype: 'json',
-            data: data,
-        }).fail( function(ans) {
-            console.log('проблемы в PHP');
-            /*form.find('.error-mes').text('На сервере произошла ошибка').show();*/
-        })
-        return result;
-    };
     
 // Возвращаем объект (публичные методы)
 return {
@@ -86,28 +64,3 @@ return {
 })();
 myModule.init();
 
-$(document).ready(function() {
-	
-	// Проверка наличия JS, jQuery.
-	console.log("js works");
-	if($) {
-		console.log("jQuery works");
-	}
-  
-  	// Прослушка события: изменение инпута загрузки файла.
-	var setUpListnerFileupload = function (){
-		$('#fileupload').on('change', changefileUpload);
-	};
-
-	// Функция добавления имени файла в инпут "filename".
-	var changefileUpload = function (){
-		var 
-			input = $(this), // Инпут type="file"
-			name = input[0].files[0].name; // Имя загруженного файла
-		$('#filename').val(name) // Добавление имени в инпут "filename".
-	};
-
-	setUpListnerFileupload();
-
-	changefileUpload();
-});
