@@ -1,8 +1,7 @@
 $(document).ready(function () {
  
     $('#login-form').validate({
-  
-    focusCleanup:true,
+    onclick: false,
        rules:{
            login: {
                required: true,
@@ -29,7 +28,7 @@ $(document).ready(function () {
    });
     
     $('.contact_form').validate({
-        focusCleanup:true,
+        onclick: false,
               rules:{
            your_name:{
                 required: true,
@@ -92,7 +91,7 @@ console.log('ready');
 $('#add_project').submit(valid);
 
 var valid = $('#add_project').validate({
-        focusCleanup:true,
+        onclick: false,
         
               rules:{
            name_project: {
@@ -174,23 +173,29 @@ var validFile = function(inputFile){
 
 $(document).ready(function() {
 	
+  
+    
 	// Проверка наличия JS, jQuery.
 	console.log("js works");
 	if($) {
 		console.log("jQuery works");
 	}
-  
+
   	// Прослушка события: изменение инпута загрузки файла.
 	var setUpListnerFileupload = function (){
 		$('#fileupload').on('change', changefileUpload);
 	};
-
+    
+    var $inputfile = $("#add_project_picture");
 	// Функция добавления имени файла в инпут "filename".
 	var changefileUpload = function (){
 		var 
-			input = $(this), // Инпут type="file"
-			name = input[0].files[0].name; // Имя загруженного файла
-		$('#filename').val(name) // Добавление имени в инпут "filename".
+			inputFile = $('#fileupload'),
+            filepath = inputFile.val(),	
+            input = $("#filename");
+            
+            filepath = filepath.replace(/c:\\fakepath\\/gmi,""),
+            input.val(filepath)
 	};
 
 	setUpListnerFileupload();

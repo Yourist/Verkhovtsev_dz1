@@ -11,6 +11,7 @@ if ($name === '') {
     
     $data['text'] = 'Вы молодец, заполнили имя!';
     $data['status'] = 'OK';
+    
 }
 
 header("Content-Type: application/json");
