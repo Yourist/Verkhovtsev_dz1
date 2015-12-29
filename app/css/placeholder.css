@@ -1,0 +1,13 @@
+input, button, textarea{
+    outline:none;
+    border: 0;
+    font-size: 24px;
+}
+::-webkit-input-placeholder {color:#48cbe8;font-size:24px;}
+::-moz-placeholder          {color:#48cbe8;font-size:24px;}/* Firefox 19+ */
+:-moz-placeholder           {color:#48cbe8;font-size:24px;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#48cbe8;font-size:24px;}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}

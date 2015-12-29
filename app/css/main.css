@@ -21,7 +21,6 @@ body{
     color: #4a545d;
 }
 
-
 /* Common classes*/
 .container{
     width: 960px;
@@ -397,7 +396,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaef', end
     border: 1px solid #f97e76;
 }
 
-
 #filename-error,
 #login-error,
 #password-error,
@@ -415,16 +413,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaef', end
 }
 
 #add_input_url-error{
-    margin-left: -134px;
-    margin-top: -40px;
+    top: 46%;
+    right: 102%;
+    min-width: 108px;
 }
 #add_input_name-error{
-    margin-left: -138px;
-    margin-top: -43px;
+    top: 45%;
+    right: 102%;
+    min-width: 112px;
 }
 #add_project_description-error{
-    margin-left: -138px;
-    margin-top: -83px;
+    top: 45%;
+    right: 102%;
+    min-width: 112px;
 }
 #your_name-error{
     top: 52%;
@@ -436,8 +437,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaef', end
     min-width: 112px;
 }
 #your_descript-error{
-    margin-left: -98px;
-    margin-top: -116px;
+    top: 47%;
+    right: 102%;
+    min-width: 72px;
 }
 #you_not_robot-error{
     top: 45%;
@@ -445,18 +447,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaef', end
     min-width: 101px;
 }
 #login-error{
-    margin-left: -117px;
-    margin-top: -45px;
+    top: 61%;
+    left: -27%;
+    min-width: 89px;
 }
 #password-error{
-    margin-left: -124px;
-    margin-top: -45px;   
+    top: 62%;
+    left: -29%;
+    min-width: 89px;
 }
 #filename-error{
-    margin-left: -109px;
-    margin-top: -33px;
+    top: 25%;
+    right: 102%;
+    min-width: 80px;
 }
-
 
 #filename-error:before,
 #login-error:before,
@@ -521,6 +525,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaef', end
     margin-top: 6px;
 }
 
+::-webkit-input-placeholder {color:#48cbe8;font-size: 13px;}
+::-moz-placeholder          {color:#48cbe8;font-size: 13px;}/* Firefox 19+ */
+:-moz-placeholder           {color:#48cbe8;font-size: 13px;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#48cbe8;font-size: 13px;}
+input, textarea{
+    color: #48cbe8;
+    font-size: 13px;
+}
+.placeholder {color:#48cbe8;}
 
 
 

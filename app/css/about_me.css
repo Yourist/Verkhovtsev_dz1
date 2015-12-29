@@ -1,0 +1,176 @@
+/* Variable_content */
+/* Common_styles*/
+.aboutbox{
+    background: #eff3f7;
+    border-radius: 4px;
+    margin-bottom: 23px;
+}
+.aboutbox_header{
+    font-family: 'fira_sansbook';
+    font-size: 27px;
+    font-weight: normal;
+    color: #3ba8c0;
+    border-bottom: 3px #3ba8c0 solid;
+    margin: 0 0 17px 0;
+    padding: 13px 23px;
+    padding-top: 12px;
+    display: inline-block;
+}
+.aboutbox_body{
+    padding-bottom: 40px;
+}
+/* End Common_styles */
+    /* About_me*/
+
+    .image_wrap{
+        float:left;
+        margin-left: 55px;
+        margin-top: 13px;
+    }
+    .worksheet_wrap{
+        float:right;
+        width: 420px;
+    }
+    .worksheet_list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .worksheet_list_item{
+        margin-bottom: 9px;
+    }
+
+    .worksheet_list_item_what{
+        font-family: 'fira_sansmedium';
+        float: left;
+        margin-right: 25px;
+        color: #4a545d;
+    }
+    .avatar_box{
+        width: 142px;
+        height: 142px;
+        border-radius: 50% 50%;
+        overflow: hidden;
+        border: 5px solid #3ba8c0;
+    }
+    .avatar{
+        width: 100%;
+    }
+    .worksheet_list_item_info{
+        font-family: 'fira_sansbook';
+        font-size: 15px;
+        overflow: hidden;
+        max-width: 218px;
+        color: #37424d;
+        font: 300 15px;
+        max-width: 260px;
+    }
+        /* Skills */
+        .skills_list{
+            width: 224px;
+            padding: 0;
+            list-style: none;
+        }
+        .skills_list_item{
+            display: inline-block;
+            background: #3ba8c0;
+            padding: 2px 12px;
+            margin-top: 6px;
+            margin-bottom: 2px;
+            margin-left: 5px;
+            border-radius: 2px;
+            background: -webkit-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+            background: -moz-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+            background: -o-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+            background: -ms-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+            background: linear-gradient(0deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+            font-size: 14px;
+            color: #ffffff;
+            font: 400 14px 'ProximaNovaCond';
+        }
+        /* End Skills*/
+            /* About_me exp */
+
+
+.exp_wrap{
+    margin: 0;
+    padding: 0 0 0 60px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 650px;
+    
+}
+.bottomia{
+margin-bottom: -10px;
+}
+.exp_text{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin-bottom: 7px;
+}
+
+.exp_text:before{
+    background: url(/img/sprite.png) center no-repeat;
+    content: "";
+	display: inline-block;  
+    vertical-align: middle;
+    margin: 0 25px 5px 0;
+}
+.work:before{
+    background-position: -334px -277px;
+    height: 38px;
+    width: 37px;
+}
+.where_howlong{
+    display: inline-block;
+    max-width: 480px;
+    vertical-align: middle;
+    margin-top: 3px;
+}
+.where{
+    min-width: 400px;
+    max-width: 480px;
+    font: 16px 'fira_sansbook';
+    color: #4a545d; 
+    display: inline-block;
+    vertical-align: middle;
+}
+.howlong{
+    min-width: 400px;
+    max-width: 480px;
+    color: #4a545d;
+    font: 15px 'fira_sansbook';
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -9px;
+}
+.edu{
+    margin-top: -2px;
+}
+.edu:before{
+    width: 50px;
+    height: 30px;
+    background-position: -364px -165px;
+    margin-left: -3px;
+    margin-right: 14px;
+}
+.course:before{
+    width: 30px;
+    height: 36px;
+    background-position: -197px -5px;
+    margin-left: 4px;
+    margin-top: 3px
+}
+
+
+
+
+
+
+
+
+
+
+
+

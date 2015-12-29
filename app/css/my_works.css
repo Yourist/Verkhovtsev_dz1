@@ -122,6 +122,9 @@
 .hide_popup_block{
     display: none;
 }
+.form_group{
+    position: relative;
+}
 .error-mes{
     height: 59px;
     background-color: rgba(249, 126, 118, 0.33);
@@ -161,6 +164,12 @@
 ::-moz-placeholder          {color:#48cbe8;font-size: 13px;}/* Firefox 19+ */
 :-moz-placeholder           {color:#48cbe8;font-size: 13px;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#48cbe8;font-size: 13px;}
+input, textarea{
+    color: #48cbe8;
+}
+.placeholder {color:#48cbe8;}
+
+
 .add_project_background{
     position: fixed;
     top: 0px;
@@ -297,6 +306,36 @@
 	width: 0px;
   height: 0px;
 }
+
+.success-mes{
+    display: none;
+    background-color: rgba(73, 187, 123, 0.33);
+    color: #49bb7b;
+    width: 318px;
+    border-color: #49bb7b;
+    border-radius: 4px;  
+}
+.success-text{
+    color: #5ec289;
+    font-size: 25px;
+    margin: 0;
+    padding-left: 11px;
+}
+.success-text-p{
+    color: #5ec289;
+    padding-left: 11px;
+}
+.close_success_mes{
+    float: right;
+    margin: -32px 5px 0px 20px;
+    color: #5ec289;
+    height: 12px;
+    width: 12px;
+    outline: none;
+    border: 0;
+    background: url(/img/close_suc-mes.png);
+}
+
 /* end POPUP block*/
 
 

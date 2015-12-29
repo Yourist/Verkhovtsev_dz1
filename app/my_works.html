@@ -27,16 +27,15 @@
        <meta name="msapplication-TileColor" content="#ffffff">
        <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
        <meta name="theme-color" content="#ffffff">
-               <!--bower CSS-->
+        <!-- build:css css/combine.css -->
         <link rel="stylesheet" href="bower/normalize-css/normalize.css">
-        <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
-               <!-- CSS -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/my_works.css">
-               <!--Modernizr-->
-        <script src="bower/modernizer/modernizr.js"></script>
-               <!-- fonts -->
         <link rel="stylesheet" href="fonts/fira_proxima.css">
+            <!-- endbuild -->
+        <!-- build:js js/amoder.js -->
+        <script src="bower/modernizer/modernizr.js"></script>
+        <!-- endbuild -->
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
 	<![endif]-->
@@ -117,7 +116,7 @@
                            
                             <div class="project_block_wrap">
                                  <div class="img_construction">
-                                  <img src="/my_works/gazeta.png" alt="Gazeta.ru" class="project_img">
+                                  <img src="/img/gazeta.png" alt="Gazeta.ru" class="project_img">
                                   <div class="link_wrap">
                                       <a href="http://www.gazeta.ru/" class="img_link" ><span class="hidden_link">gazeta</span></a>
                                   </div> 
@@ -130,7 +129,7 @@
                              
                             <div class="project_block_wrap">
                                  <div class="img_construction">
-                                  <img src="/my_works/google.png" alt="Gazeta.ru" class="project_img">
+                                  <img src="/img/google.png" alt="Gazeta.ru" class="project_img">
                                   <div class="link_wrap">
                                       <a href="http://www.gazeta.ru/" class="img_link" ><span class="hidden_link">google</span></a>
                                   </div> 
@@ -143,7 +142,7 @@
                              
                             <div class="project_block_wrap">
                                  <div class="img_construction">
-                                  <img src="/my_works/rg.png" alt="Gazeta.ru" class="project_img">
+                                  <img src="/img/rg.png" alt="Gazeta.ru" class="project_img">
                                   <div class="link_wrap">
                                       <a href="http://www.rg.ru/" class="img_link" ><span class="hidden_link">rg</span></a>
                                   </div> 
@@ -156,7 +155,7 @@
                                 
                             <div class="project_block_wrap">
                                  <div class="img_construction">
-                                  <img src="/my_works/times.png" alt="Gazeta.ru" class="project_img">
+                                  <img src="/img/times.png" alt="Gazeta.ru" class="project_img">
                                   <div class="link_wrap">
                                       <a href="http://www.thetimes.co.uk/tto/news/" class="img_link" ><span class="hidden_link">thetimes</span></a>
                                   </div> 
@@ -213,9 +212,14 @@
                   <h4 class="error-text">Ошибка!</h4>
                   <span class="error-text-p">Невозможно добавить проект.</span>
                   <div class="close_error_mes"></div>
+                  
                </div>
-               
-               <div class="server-mes succes-mes"></div>
+              <div class="server-mes success-mes">
+                  <h4 class="success-text">Ура!</h4>
+                  <span class="success-text-p">Проект добавлен.</span>
+                  <a class="close_success_mes"></a>
+                  
+               </div>
                <div class="form_group">
                 <label for="add_input_name" id="add_project_name">Название проекта
                     <input type="text" placeholder="  Введите название" id="add_input_name" name="name_project" />
@@ -247,13 +251,16 @@
             </div>
         </div>
 <!-- end POPUP-->  
+
+ <!-- build:js js/combine.js -->
   <!--jQuery-->
 <script src="bower/jquery/jquery.js"></script>
 <script src="bower/bPopup/jquery.bpopup.js"></script>
-<script src="bower/qtip2/jquery.qtip.js"></script>
 <script src="bower/jquery-validation/dist/jquery.validate.js"></script>
-<script src="js/validation.js"></script>
+<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/fake_input.js"></script>
 <script src="js/my_work.js"></script>
-
+<!-- endbuild -->
 </body>
 </html>
