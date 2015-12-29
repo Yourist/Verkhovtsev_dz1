@@ -111,7 +111,7 @@ margin-bottom: -10px;
 }
 
 .exp_text:before{
-    background: url(/img/sprite.png) center no-repeat;
+    background: url(../img/sprite.png) center no-repeat;
     content: "";
 	display: inline-block;  
     vertical-align: middle;

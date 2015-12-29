@@ -110,7 +110,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
         height: 100%;
         width: 100%;
         text-indent: -9999px;
-        background: url(/img/sprite.png);
+        background: url(../img/sprite.png);
     }
     .vk{
         width: 47px;
@@ -232,7 +232,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
         padding-left: 71px;
 }
 .gmail:before, .telephone:before, .skype:before{
-    background: url(/img/sprite.png);
+    background: url(../img/sprite.png);
     content: "";
 	width: 20px;
 	height: 20px;
@@ -377,12 +377,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaef', end
         font-size: 16px;
         line-height: 2.2;
         color: #4a545d;
-        background: url(/img/locked.png);
+        background: url(../img/locked.png);
         height: 32px;
         width: 20px;
     }
     .lock .lock_inner:hover{
-        background: url(/img/unlocked.png);
+        background: url(../img/unlocked.png);
     }
     /* END Login */
 /* END Footer*/
@@ -534,6 +534,9 @@ input, textarea{
     font-size: 13px;
 }
 .placeholder {color:#48cbe8;}
+
+
+
 
 
 

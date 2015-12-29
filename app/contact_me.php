@@ -1,9 +1,7 @@
 <?php
 
-	$name = $_POST['name_project'];
-    $pic = $_POST['filename'];
-    $url = $_POST['project_URL'];
-    $descript = $_POST['description_add'];
+	$name = $_POST['login'];
+
 
 $data = array();
    	if ($name === '') {
@@ -11,7 +9,7 @@ $data = array();
 		$data['text'] = "Вот только не надо крашить мой сайт, чувак";
 	} else {
 		$data['mes'] = 'OK';
-		$data['text'] = "Великодушно пропускаю тебя, гость";
+		$data['text'] = "В ближайшее время изучу вашу творческую идею. Я рад, что вы смотрите в консоль";
 	}
 
 	header("Content-Type: application/json");

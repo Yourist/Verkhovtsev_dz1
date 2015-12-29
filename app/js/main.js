@@ -1,4 +1,8 @@
-
+if(typeof console === 'undefined' || typeof console.log === 'undefined') {
+                var console = {};
+                console.log = function(){
+                };
+        }
 
  
    var validLogin = $('#login-form').validate({
@@ -129,15 +133,25 @@ var valid = $('#add_project').validate({
 
 			if (valid.form()) {
                 $.ajax({
-                url: $('.form').attr('action'),
+                url: $('#add_project').attr('action'),
                 type: 'POST',
                 dataType: 'json',
                 data: $('#add_project').serialize()
-    });
-			console.log('ajax');  	
-                $('.success-mes').show();
-			}
+        })
+            .done(function(ans){
+                console.log(ans.text);  	
+                $('.success-mes').show();        
+                })
+            .fail(function(ans){
+                    console.log(ans.text);
+                })
+            .always(function() {
+                    console.log('just always')
+                })
+
+			};
 		});
+
 
  $('.contact_form').on('submit',function(e) {
 			e.preventDefault();
@@ -148,10 +162,18 @@ var valid = $('#add_project').validate({
                 type: 'POST',
                 dataType: 'json',
                 data: $('.contact_form').serialize()
-    });
-			console.log('ajax');  	
-              
-			}
+        })
+            .done(function(ans){
+                console.log(ans.text);  	
+                })
+            .fail(function(ans){
+                    console.log(ans.text);
+                })
+            .always(function() {
+                    console.log('just always')
+                })
+
+			};
 		});
 
  $('#login-form').on('submit',function(e) {
@@ -163,10 +185,18 @@ var valid = $('#add_project').validate({
                 type: 'POST',
                 dataType: 'json',
                 data: $('#login-form').serialize()
-    });
-			console.log('ajax');  	
-                
-			}
+        })
+            .done(function(ans){
+                console.log(ans.text);  	
+                })
+            .fail(function(ans){
+                    console.log(ans.text);
+                })
+            .always(function() {
+                    console.log('just always')
+                })
+
+			};
 		});
 
 
